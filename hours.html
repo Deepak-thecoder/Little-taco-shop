@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The little Taco shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Welcome to the little taco shop</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#Menu.html">Menu</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <figure>
+        <img
+          src="tacos-authentic-mexican-food.jpg"
+          alt="Tray of Tacos"
+          title="We love Tray of Tacos"
+          height="667"
+          width="1000"
+        />
+      </figure>
+      <figcaption class="offscreen">Tray of Tacos</figcaption>
+    </section>
+    <main class="main">
+      <article class="main__article">
+        <h2><u>HOURS</u></h2>
+        <p>We are open 7days in a week</p>
+        <dl>
+          <dt>Sunday-Thursday</dt>
+          <dd>11AM to 05PM</dd>
+          <dt>Friday-Monday</dt>
+          <dd>8AM to 9PM</dd>
+        </dl>
+        <p class="Back">
+          <a href="#">Back to top</a>
+        </p>
+      </article>
+    </main>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy;<time id="year"></time></span>
+        <span class="nowrap">Little Taco Shop</span>
+      </p>
+    </footer>
+    <script>
+      const year = document.getElementById("year");
+      const currentYear = new Date().getFullYear();
+      year.setAttribute("datetime", currentYear);
+      year.textContent = currentYear;
+    </script>
+  </body>
+</html>

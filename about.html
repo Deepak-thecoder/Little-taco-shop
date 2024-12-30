@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The little Taco shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Welcome to the little taco shop</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#Menu.html">Menu</a></li>
+          <li><a href="Hours.html">Hour</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <figure>
+        <img
+          src="tacos-authentic-mexican-food.jpg"
+          alt="Tacos Delicious"
+          title="Tacos Delicious!"
+          height="667"
+          width="1000"
+        />
+      </figure>
+      <figcaption class="offscreen">Tacos and a Drink</figcaption>
+    </section>
+    <main class="main">
+      <article id="about" class="main__article about">
+        <h2>About<abbr title="The little Taco Shop">LTS</abbr></h2>
+        <p>
+          <abbr title="The Little Taco Shop">LTS</abbr>Was founded in
+          <time datetime="2024"></time>. Our shop was bulit from a
+          <strong>Love of Tacos </strong>our place add a uniqe and intresting
+          place
+        </p>
+        <aside class="about__trivia">
+          <h3>Taco Trivia</h3>
+          <details>
+            <summary>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam repudiandae corrupti saepe minima. Laudantium, earum
+              aperiam nulla esse nesciunt accusantium?
+            </summary>
+            <p class="about__trivia-answer">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+              consequuntur nemo laborum mollitia laudantium labore ipsam
+              architecto itaque temporibus rem, eaque totam dolore quidem, rerum
+              aperiam. Possimus excepturi impedit illum voluptatibus officia.
+              Nihil, culpa illo!
+            </p>
+          </details>
+        </aside>
+      </article>
+    </main>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy;<time id="year"></time></span>
+        <span class="nowrap">Little Taco Shop</span>
+      </p>
+    </footer>
+    <script>
+      const year = document.getElementById("year");
+      const currentYear = new Date().getFullYear();
+      year.setAttribute("datetime", currentYear);
+      year.textContent = currentYear;
+    </script>
+  </body>
+</html>
